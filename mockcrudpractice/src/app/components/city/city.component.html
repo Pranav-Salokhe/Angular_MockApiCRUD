@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-lg-6 mx-auto mt-5">
+        <div class="p-5 border rounded">
+            <form [formGroup]="formData" (ngSubmit)="saveData(formData.value)">
+                <input type="hidden" formControlName="id">
+                <div class="form-group mb-4">
+                    <label>Name of Student :</label>
+                    <input type="text" class="form-control" formControlName="name"><br>
+                    
+                    <label>Age :</label>
+                    <input type="number" class="form-control" formControlName="name"><br>
+                    <label>Gender :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female<br><br>
+                    <label>Select City :</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select class="p-2">
+                        <option value="">Select city</option>
+                        <option value="">Kolhapur</option>
+                        <option value="">Sangli</option>
+                        <option value="">Satara</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Pune</option>
+
+                    </select>
+                    <br><br>
+                    <label>What Language know :</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" class="me-1">C&nbsp;&nbsp;
+                    <input type="checkbox" class="me-1">C++&nbsp;&nbsp;
+                    <input type="checkbox" class="me-1">Java&nbsp;&nbsp;
+                    <input type="checkbox" class="me-1">.NetCore&nbsp;&nbsp;
+                    
+
+                    
+
+
+                    
+                </div>
+                <div>
+                <button type="submit" class="btn btn-primary mt-4">Submit</button></div>
+            </form>
+        </div>
+    </div>
+</div>
